@@ -13,7 +13,6 @@
 				<li>Hantering av studenter</li>
 				<li>Nyheter/Uppdateringar kring kursen (anslagstavla)</li>
 				<li>Inlämning av uppgifter</li>
-				<li>Forum för frågor och svar kring kursen (och materialet här)</li>
 			</ul>
 			<h3>Denna Webbplats</h3>
 			<p>Denna webbplats kommer hantera kursens resurser, till exempel:</p>
