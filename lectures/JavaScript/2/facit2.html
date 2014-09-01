@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript</title>
+</head>
+
+<body>
+<pre>
+<script type="text/javascript">
+
+// Övning 1
+document.write("<p>Övning 1</p>");
+
+for(var i = 0; i <= 100; i = i+2)// Loopen börjar på 0 (i:s värde), och körs så länge i är mindre än 100. Varje varv ökar i med 2.
+{
+	document.write(i + ", "); //Skriver ut värdet på i
+}
+
+/* Kommentar
+
+Nyckeln till att skriva ut bara jämna tal i denna uppgift är att som sista värde i for-loopen (i = i+2), så ökar vi värdet på variabeln i med 2 (istället för 1 som i exemplen). Då blir värdet för i såhär:
+var i = 0  // 0
+i = 0 + 2; // 2
+i = 2 + 2; // 4
+i = 4 + 2; // 6
+i = 6 + 2; // 8
+osv.
+
+*/
+
+
+// Övning 2
+document.write("<p>Övning 2</p>");
+
+for(var i = 10; i < 80; i++) // Loopen börjar på 10 (i:s värde) och körs så länge i är mindre än 80. Varje varv ökar värdet på i med 1
+{
+	if(i % 10 == 0) // Om resten av i/10 är 0
+	{
+		document.write("<br>"); // Så skriver vi ut en radbrytning
+	}
+	document.write(i + ", ");
+}
+
+/* Kommentar
+
+I for-loopen sätter vi startvärdet i = 10, och räknar så länge i är mindre 80. Varje varv ökar vi värdet på varbeln i med 1. Då har vi fixat biten med att räkna från 10 till 79.
+
+För att sedan göra en radbrytning efter varje tio-tal så använder vi oss utav "modulus", alltså tecknet %. Modulus ger oss resten vid en division, se exempel:
+10 % 10 = 0 // Vi skriver ut en radbrytning
+11 % 10 = 1
+12 % 10 = 2
+13 % 10 = 3
+14 % 10 = 4
+15 % 10 = 5
+16 % 10 = 6
+17 % 10 = 7
+18 % 10 = 8
+19 % 10 = 9
+20 % 10 = 0 // Vi skriver ut en radbrytning.
+21 % 10 = 1
+22 % 10 = 2
+osv.
+
+Alltså om värdet på i, ger resten 0, då skriver vi ut en radbrytning.
+
+
+*/
+
+// Övning 3
+document.write("<p>Övning 3</p>");
+
+if("10" == 10) // Om "10" är samma som 10
+{
+	document.writeln("Det är sant!"); // Skriver vi ut "Det är sant"
+}
+else // Om "10" INTE är lika med 10
+{
+	document.writeln("Det är falskt!"); // Skriver vi ut "Det är falskt"
+}
+
+if("10" === 10) // Om "10" är samma som 10 (även samma datatyp)
+{
+	document.writeln("Det är sant!"); // Skriver vi ut "Det är sant"
+}
+else // Annars
+{
+	document.writeln("Det är falskt!"); // Skriver vi ut "Det är falskt"
+}
+
+/* Kommentar
+
+Denna övning visar skillnaden mellan ==, och ===. Som ni kan se så räknar "10" och 10 som lika om man använder ==, men inte om man använder === som jämförelse i testet.
+
+*/
+
+// Övning 4
+document.write("<p>Övning 4</p>");
+
+var antalFel = 0; // Skapar en variabel där vi lagrar antal fel som användaren för
+var i = false; // Skapar en variabel som hjälper oss att kontrollera hur länge loopen ska köras
+
+do
+{
+	var answer = prompt("Vad heter Sveriges statsminister i förnamn?"); // Skicka frågan genom en popup till användaren, som här skriver in sitt svar. Svaret lagras i variabeln "answer"
+	if(answer == "Fredrik") // Om användaren svar rätt
+	{
+		i = true; // Sätter variabeln i till true, och loopen avbryts
+	}
+	else // Om användaran svarat fel
+	{
+		antalFel++; // Ökar variabeln antalFel med 1
+		alert("Du svarade fel, försök igen!") // Skickar ut ett meddelande till användaren att den svarade fel
+	}
+}
+while(i == false) // Loopen körs så länge i är false
+
+
+// Nedan samma kod som ovan
+var i = false;
+
+do
+{
+	var answer = prompt("Vilken är skånes största stad?");
+	if(answer == "Malmö")
+	{
+		i = true;
+	}
+	else
+	{
+		antalFel++;
+		alert("Du svarade fel, försök igen!")
+	}
+}
+while(i == false)
+
+// Slutligen skriver vi ut hur många fel användaren hade
+alert("Du svarade fel totalt " + antalFel + " gånger!");
+
+/* Kommentar
+
+Först skapar vi en variabel där vi lagrar antal fel vi gör. Vi anger startvärdet på denna variabel till 0, och för varje fel vi göra ökar vi den med 1.
+Sedan skapar vi även variabeln i, som vi ger värdet false. Detta för att vi ha en variabel som kontrollerar hur länge vår kommande loop ska köras. Loopen kommer att köras ända tills vi ändrar värdet på variabeln i till true.
+
+Vi använder sedan en do while-loop för att ställa frågan, ända tills vi svarar rätt. Vi väljer en do while-loop eftersom att vi alltid vill köra loopen minst en gång.
+Loopens innehåll fungerar såhär.
+1. Vi ställer frågan, och användaren skickar in sitt svar.
+2. Vi kontrollerar om svaret är rätt.
+2.1. Om svaret är rätt ändrar vi varabeln i värde till true -> Och loopen avbryts.
+2.2. Om svaret är fel så ökar vi variabeln "antalFel" med 1, skickar ett meddelande till användaren att han/hon svarat fel, och kör loopen ett varv till.
+
+Samma sak (steg ovan) kör vi för den andra frågan.
+
+Sedan berättar vi för användaren hur många gånger han/hon svarat fel genom en popup-ruta.
+
+*/
+
+
+// Övning 5
+document.write("<p>Övning 5</p>");
+
+var number = prompt("Skriv in ett tal så säger jag om det är större eller mindre än 0"); // Hämtar det som användaren skriver in i popup-rutan och sparar det i variabeln "number"
+if(number == "") // Om användaren inte skriv in något
+{
+	alert("Du glömde att skriva in ett tal!");
+}
+else if(isNaN(number)) // Om det användaren skrev in inte är ett nummer
+{
+	alert("Du skrev inte in ett nummer!");
+}
+else if(number > 0) // Om det användaren skrev in är större än 0
+{
+    alert("Talet är positivt!");
+}
+else if(number < 0) // Om det användaren skrev in är mindre än 0
+{
+    alert("Talet är negativt!");
+}
+else // Annars (då är det användaren skrev in 0)
+{
+    alert("Du skrev in 0, det är varken större eller mindre än 0!");
+}
+
+/* Kommentar
+
+Tänk på att man bara kan ha EN if-sats, och en else-sats, men många else if-satser.
+
+*/
+
+// Uppgift 6
+
+// Gör loopen som går 5 gånger.
+for(var i = 0; i < 5; i++)
+{
+	var number = Math.floor(Math.random()*20); // Slumpar fram ett tal mellan 0-19
+	if(number < 10)// Kollar om talet är mindre än 10
+	{
+		document.writeln("Talet " + number + " är mindre än 10");
+	}
+	else if(number > 10)// Kollar om talet är större än 10
+	{
+		document.writeln("Talet " + number + " är större än 10");
+	}
+	else // Annars är talet 10
+	{
+		document.writeln("Talet " + number + " är 10");
+	}
+}
+</script>
+</pre>
+</body>
+</html>

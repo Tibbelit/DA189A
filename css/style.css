@@ -1,0 +1,95 @@
+/*
+	Override Bootstrap CSS
+*/
+/* Background-color for the menu */
+.navbar {
+	background-color:#932823;
+	box-shadow:0 0 10px #999;
+}
+/* Color of menu items */
+.navbar-inverse .navbar-nav > li > a{
+	color:#ccc;
+}
+/* Color of web site title */
+.navbar-inverse .navbar-brand{
+	color:#fff;
+}
+a.list-group-item.active{
+	background-color: #932823;
+	border-color:#932823;
+}
+@media screen and (min-width: 768px){
+	.navbar-brand{
+		display:none;
+	}
+}
+@media screen and (max-width: 768px){
+	.pageTitle{
+		display:none;
+	}
+	.navbar-brand{
+		max-width:inherit;
+	}
+}
+
+
+
+
+/* Page layout */
+body > .container{
+	margin-top:50px;
+}
+h5{
+	font-weight:bold;
+}
+.pageTitle h1{
+	height:120px;
+	line-height:120px;
+	float:left;
+	margin:0px;
+}
+.pageTitle img{
+	float:right;
+	height:100px;
+	margin: 10px 0;
+}
+.theContent{
+	border-top:2px solid #932823;
+	border-bottom:2px solid #932823;
+}
+.preview{
+	display:block;
+	width:50%;
+	margin:10px auto;
+	border:5px solid #fff;
+	box-shadow:0 0 5px #999;
+}
+iframe{
+	margin:10px auto;
+	display:block;
+	border:5px solid #fff;
+	box-shadow:0 0 5px #999;
+}
+
+iframe[title='Disqus']{
+	box-shadow:none;
+}
+
+.a{
+	position:absolute;
+	margin-top:-60px;
+}
+
+.desc{
+	float:right;
+	color:#999;
+}
+
+.bigPlan td, .bigPlan th{
+	text-align:center;
+	border:#eee 1px solid;
+}
+
+.modulArea{
+	font-size:12px;
+}

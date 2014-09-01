@@ -1,0 +1,29 @@
+/* CSS Document */
+.sBox{
+	width:100px;
+	height:100px;
+	background-color:#333333;	
+	margin:50px;
+}
+.bBox{
+	width:200px;
+	height:200px;
+	background-color:#666666;
+	overflow:hidden;
+	position:absolute;
+	z-index:2;
+}
+#viewPoints{
+	height:30px;
+	line-height:30px;
+	font-size:16px;
+	font-family:Verdana, Geneva, sans-serif;
+	width:100%;
+	position:absolute;
+	z-index:3;
+	text-align:center;
+	background-color:#eeeeee;
+	box-shadow:0 0 5px #000;	
+	top:0px;
+	left:0px;
+}

@@ -1,0 +1,23 @@
+/* CSS Document */
+body > section{
+	width:400px;
+	margin:20px auto;
+	background-color:rgba(0,0,0,0.1);
+	text-align:center;
+	padding:20px;
+	font-family:Verdana, Geneva, sans-serif;
+	box-shadow:0 0 5px #666;
+}
+body > section > select{
+	width:100%;	
+	text-align:center;
+}
+#todoList{
+	text-align:left;	
+}
+#todoList li{
+	clear:both;
+}
+#todoList button{
+	float:right;
+}

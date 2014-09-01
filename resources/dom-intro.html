@@ -1,0 +1,56 @@
+﻿<!doctype HTML>
+<html>
+	<head>
+		<title>Test</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			// När sidan laddas kör vi funktionen "init"
+			window.addEventListener("load", init, false);
+			
+			function init(){
+				// När man ändrar något i drop-down-menyn körs funktionen "changeContent"
+				document.getElementById("mySelect").addEventListener("change", changeContent, false);
+			}
+			
+			function changeContent(){
+				// Tar bort det som finns i <div id="content">
+				document.getElementById("content").innerHTML = "";
+				
+				// Beroende på vilket val man väljer så lägger vi in nytt innehåll
+				if(this.value == "1"){
+					// Skapar en textnod
+					var text = document.createTextNode("Du valde Första!");
+					// Skapar en textarea
+					var textArea = document.createElement("textarea");
+					textArea.appendChild(text);
+					
+					// Lägger till innehållet på sidan
+					document.getElementById("content").appendChild(textArea);
+				}else if(this.value == "2"){
+					// Skapar en textnod
+					var text = document.createTextNode("Du valde Andra!");
+					// Skapar en textarea
+					var textArea = document.createElement("textarea");
+					textArea.appendChild(text);
+					
+					// Lägger till innehållet på sidan
+					document.getElementById("content").appendChild(textArea);
+				}
+				else{
+					// Om man väljer "Välj här"
+					alert("Du måste välja Första eller Andra!");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<select id="mySelect">
+			<option value="0">Välj här</option>
+			<option value="1">Första</option>
+			<option value="2">Andra</option>
+		</select>
+		<div id="content">
+		
+		</div>
+	</body>
+</html>

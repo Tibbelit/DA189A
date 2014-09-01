@@ -1,0 +1,13 @@
+/* CSS Document */
+body > section{
+	width:400px;
+	margin:20px auto;
+	background-color:rgba(0,0,0,0.2);
+	text-align:center;
+	padding:20px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+body > section > select{
+	width:100%;	
+	text-align:center;
+}
