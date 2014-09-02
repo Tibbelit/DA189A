@@ -31,7 +31,7 @@
 			<div class="list-group">
             	<a href="lectures.php?type=Intro&nr=dvwebb" class="list-group-item">Introduktion till dvwebb<span class="desc">MAHs webbpubliceringssystem</span></a>
                	<a href="lectures.php?type=Modul1&nr=Intro" class="list-group-item">Introduktion till <i>event listensers</i><span class="desc">Skillnader mot <i>event handlers</i></span></a>
-               	<a href="lectures.php?type=Modul1&nr=Intro" class="list-group-item">Bubbling/Captureing<span class="desc">Event listeners</span></a>
+               	<a href="lectures.php?type=Modul1&nr=Capturing-Bubbling" class="list-group-item">Bubbling/Captureing<span class="desc">Event listeners</span></a>
                 <!--
                 	Ska publiceras till Inl.2/5
 			  	<a href="lectures.php?type=JavaScript&nr=v1" class="list-group-item">Nästslade arrayer<span class="desc">Mer avancerad datastruktur</span></a>
