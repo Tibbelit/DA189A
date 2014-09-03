@@ -41,8 +41,8 @@ function changeColor(e){
 }
         </pre>
         <h3>Startfiler</h3>
-        <p>Ni kan ladda ner de tre filerna ovan <a href="exercises/1/intro/exercise/exercise.zip">här</a>, eller surfa till webbsidan <a href="http://localhost/DA189A/exercises/1/intro/exercise/">här</a>.</p>
+        <p>Ni kan ladda ner de tre filerna ovan <a href="exercises/1/intro/exercise/exercise.zip">här</a>, eller surfa till webbsidan <a href="exercises/1/intro/exercise/">här</a>.</p>
         <h3>Facit</h3>
-        <p>Ni kan ladda ner facit <a href="exercises/1/intro/result/result.zip">här</a>, eller surfa till webbsidan <a href="http://localhost/DA189A/exercises/1/intro/result/"> här</a>.</p>
+        <p>Ni kan ladda ner facit <a href="exercises/1/intro/result/result.zip">här</a>, eller surfa till webbsidan <a href="exercises/1/intro/result/"> här</a>.</p>
     </div>
 </div>

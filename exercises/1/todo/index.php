@@ -48,6 +48,6 @@ btn.addEventListener("click", removeThingFromList, false);
         <h3>Startfiler</h3>
         <p>Ni får själva skapa era startfiler, lämpligen en HTML, en CSS och en JavaScript-fil. Tänk på att alla JavaScript-kod ska ligga i JavaScript-filen (alltså ingen JavaScript-kod i HTML-filen).</p>
         <h3>Facit</h3>
-        <p>Ni kan ladda ner facit <a href="exercises/1/todo/result/result.zip">här</a>, eller surfa till webbsidan <a href="http://localhost/DA189A/exercises/1/todo/result/"> här</a>.</p>
+        <p>Ni kan ladda ner facit <a href="exercises/1/todo/result/result.zip">här</a>, eller surfa till webbsidan <a href="exercises/1/todo/result/"> här</a>.</p>
     </div>
 </div>
