@@ -53,7 +53,13 @@
             <li><a href="index.php" id="startLink">Start</a></li>
             <li><a href="about.php">Om kursen</a></li>
             <li><a href="plan.php">Planering</a></li>
-            <li><a href="modules.php">Moduler</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="menuModules">Moduler <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="modules.php?module=0">0. Introduktion</a></li>
+                    <li><a href="modules.php?module=1">1. Händelselyssanre</a></li>
+                </ul>
+            </li>
 			<li><a href="lectures.php">Föreläsningar</a></li>
 			<li><a href="assignments.php">Inlämningsuppgifter</a></li>
             <li><a href="faq.php">Frågor &amp; svar</a></li>

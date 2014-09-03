@@ -20,8 +20,8 @@
                 </tr>
                 <tr>
                 	<th>Modul</th>
-                    <td>Intro</td>
-                    <td colspan="3">Modul 1</td>
+                    <td><a href="modules.php?module=0">Intro</a></td>
+                    <td colspan="3"><a href="modules.php?module=1">Modul 1</a></td>
                     <td colspan="3">Modul 2</td>
                     <td colspan="3">Modul 3</td>
                     <td colspan="3">Modul 4</td>

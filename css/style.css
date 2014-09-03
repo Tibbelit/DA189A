@@ -93,3 +93,13 @@ iframe[title='Disqus']{
 .modulArea{
 	font-size:12px;
 }
+
+.dropdown-menu a:hover{
+	background-color:#000 !important;
+	background-image:none !important;
+}
+
+.dropdown-menu a{
+	padding-top:7px !important;
+	padding-bottom:7px !important;
+}

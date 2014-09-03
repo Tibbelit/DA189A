@@ -7,7 +7,11 @@ $(document).ready(function(){
 		}
 	});
 	if(i == 0){
-		$("#startLink").parent().addClass("active");
+		if(getFileName() == "modules.php"){
+			$("#menuModules").parent().addClass("active");
+		}else{
+			$("#startLink").parent().addClass("active");
+		}
 	}
 });
 
